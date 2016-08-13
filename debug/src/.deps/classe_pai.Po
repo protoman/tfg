@@ -1,0 +1,2 @@
+classe_pai.o classe_pai.o:  \
+ /arquivos/programas/devel/tfg_1/src/classe_pai.cpp

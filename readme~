@@ -1,0 +1,35 @@
+---------------------------------------------------
+TROCA DE MENSAGENS
+---------------------------------------------------
+Como as unidades normais só podem executar uma tarefa por vez, a ordem corrente dada pelo general a elas
+é armazenada em duas variáveis:
+	struct coordenada alvo; // contém as coordenadas do ponto de destino (onde vai atacar, consertar, construir, etc)
+	char *ordem;
+Quando a ordem for cumprida, a unidade voltará ao ESTADO_LIVRE, exeto quando a ordem for ciclíca, como
+por exemplo mineirar, buscar-madeira e patrulhar, permanecendo o peão neste estado até que uma outra
+ordem de maior prioridade mude seu estado.
+
+As ordens são dadas pela função:
+classe_general::enviarOrdem(char *ordem)
+Esta função envia uma determinada ordem para unidades (qual unidade dependerá do tipo de ordem)
+ 
+ 
+---------------------------------------------------
+TODO
+---------------------------------------------------
+classe genérica para unidades móveis com variáveis comuns:
+	int x, y;
+	int estado;								//
+	classe_pai::screen;
+	classe_pai *general;
+	struct coordenada alvo;
+	char *ordem;
+
+
+---------------------------------------------------
+CHANGELOG
+---------------------------------------------------
+27/08/2006
+Separação da parte gráfica em classe GFX_SDL
+Melhor controle para teclas
+Pause funciona (tecla espaço)

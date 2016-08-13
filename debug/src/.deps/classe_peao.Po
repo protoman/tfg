@@ -1,0 +1,2 @@
+classe_peao.o classe_peao.o:  \
+ /arquivos/programas/devel/tfg_1/src/classe_peao.cpp

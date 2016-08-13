@@ -1,0 +1,8 @@
+- criar função de varredura para verificar objetos dentro de um campo de visão (raio)
+
+- criar lista de objetos conhecidos (neutral e enemy)
+		neutral: mina
+		inimigos: base, quartal, peão, etc...
+
+- liberar memória de lista_minas_conhecidas
+
